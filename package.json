@@ -1,0 +1,19 @@
+{
+  "name": "safetyq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starseed333/safetyQ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Starseed333/safetyQ/issues"
+  },
+  "homepage": "https://github.com/Starseed333/safetyQ#readme"
+}
