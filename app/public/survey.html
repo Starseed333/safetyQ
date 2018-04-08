@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friends</title>
+  <meta charset="utf-8">
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha384-fJU6sGmyn07b+uD1nMk7/iSb4yvaowcueiQhfVgQuD98rfva8mcr1eSvjchfpMrH" crossorigin="anonymous"></script>
+  <!-- MATERIALIZE -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+  <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- PUPLIC JAVASCRIPT -->
+  <script type="text/javascript" src="./assets/client.js"></script>
+  <!-- PUBLIC CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-wrapper red darken-1 z-depth-2">
+      <a href="/" class="brand-logo" id="navLogo"><i class="material-icons">local_shipping</i> Safety Quiz</a>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <!-- INFO SECTION -->
+    <div class="row">
+      <div class="col s12">
+        <div class="card z-depth-2" id="surveyCard">
+          <div class="row">
+            <div class="col s12">
+              <div class="card-content red darken-1">
+                <h2 class="white-text" id="surveyHeading">Quiz</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card-content white">
+            <span class="card-title">Your Name</span>
+            <div class="input-field">
+              <input type="text" placeholder="Your Name (required)" id="name" class="validate">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Link To Profile Picture" id="photo" class="validate">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUESTIONS BEGIN HERE****************************************************************-->
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 1</h1>
+            <h6>How far should a driver look ahead of the vehicle while driving?</h6>
+            <div class="input-field">
+              <select id="q1">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">18-21 Seconds</option>
+              <option value="2">9-12 Seconds</option>
+              <option value="3">12-15 Seconds</option>
+              <option value="4">6-9 Seconds</option>
+              <option value="5">None of the Above</option>
+              <!-- Value 3 12-15 Seconds CA -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 2</h1>
+            <h6>If the road is blocked, due to an accident, what is the likey hood of executing a turn?</h6>
+            <div class="input-field">
+              <select id="q2">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">1 (very likely)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (not at all likely)</option>
+               <!-- Value 5 CA -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 3</h1>
+            <h6>How do you correct a rear-wheel accelaration skid?</h6>
+            <div class="input-field">
+              <select id="q3">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">Apply the brake</option>
+              <option value="2">Downshift</option>
+              <option value="3">Apply more power to the wheel</option>
+              <option value="4">Stop accelarating and release the clutch</option>
+              <option value="5">None of the above</option>
+              <!-- Value 4 Stop accelarating and release the clutch CA-->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 4</h1>
+            <h6>Which statement about brakes are true?</h6>
+            <div class="input-field">
+              <select id="q4">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">The heavier a vehicle or the faster it moves, the more heat the brakes have to absorb it</option>
+              <option value="2">Brakes have more stopping power when they are hot</option>
+              <option value="3">Brake drums cool quickly</option>
+              <option value="4">None of the above</option>
+              <option value="5">All the above is true</option>
+              <!-- Value 1 CA The heavier a vehicle.... -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 5</h1>
+            <h6>The following statements about an engine overheating are TRUE EXCEPT:</h6>
+            <div class="input-field">
+              <select id="q5">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">It is not possible to safely drive without radiator fluid</option>
+              <option value="2">You should not remove the radiator cap to allow heat to escape the radiator</option>
+              <option value="3">Antifreeze is only used in colder temps</option>
+              <option value="4">Never leave the engine running when it is overheating</option>
+              <option value="5">None of the above</option>
+              <!-- Value 3 Antifreeze is only used in colder temps -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div> 
+     <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 6</h1>
+            <h6>When is the road likely to be more slippery?</h6>
+            <div class="input-field">
+              <select id="q6">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">When it has just began to rain</option>
+              <option value="2">After it has rained lightly for 30 minutes</option>
+              <option value="3">After a hard rain</option>
+              <option value="4">After the rain ended</option>
+              <option value="5">None of the above</option>
+              <!-- Value 1 When it has just began to rain -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+   
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 7</h1>
+            <h6>Which of the following statements about overhead space is true?</h6>
+            <div class="input-field">
+              <select id="q7">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">An empty van is lower than a loaded one</option>
+              <option value="2">Warning lights are always installed on low bridges and overpasses</option>
+              <option value="3">The weight of the cargo changes a trucks height</option>
+              <option value="4">The heights posted at bridges are usually accurate</option>
+              <option value="5">None of the above</option>
+              <!-- Value 3 The weight of the cargo changes a trucks height -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 8</h1>
+            <h6>Which of the following statements about downshifting is NOT true?</h6>
+            <div class="input-field">
+              <select id="q8">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">Downshift when you get to the bottom of the hill</option>
+              <option value="2">Downshift before entering a curve</option>
+              <option value="3">Downshift before starting a down hill</option>
+              <option value="4">Downshift before climbing a hill</option>
+              <option value="5">None of the above</option>
+              <!-- Value 1 Downshift when you get to the bottom of the hill -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 9</h1>
+            <h6>You are checking your tires in a pre-trip inspection. Which of these are TRUE?</h6>
+            <div class="input-field">
+              <select id="q9">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">Radial and Bias-Ply tires can be used together on the same vehicle</option>
+              <option value="2">Dual Tires should be touching each other</option>
+              <option value="3">2/32 in tread depth is safe for the front tire</option>
+              <option value="4">Different types of tires mismatched sizes should never be used on the same vehicle</option>
+              <option value="5">None of the above</option>
+              <!-- Value 4 Different types of tires mismatched sizes .. -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="card qCard">
+          <div class="card-content">
+            <h1 class="card-title">Question 10</h1>
+            <h6>You want to turn left from Pine onto Cedar. Both are two-lane, two-way streets. You should:</h6>
+            <div class="input-field">
+              <select id="q10">
+              <option value="" disabled selected>Choose Your Option</option>
+              <option value="1">Begin the turn with your vehicle in the left lane of pipe</option>
+              <option value="2">Begin turning your vehicle as soon as you enter the intersection</option>
+              <option value="3">Turn into the left lane of cedar and then move to the right lane when the traffic is clear</option>
+              <option value="4">Begin turning your vehicle when you are halfway thru the intersection</option>
+              <option value="5">None of the above</option>
+              <!-- Value 4 Begin turning your vehicle when you are halfway thru the intersection -->
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3 offset-s9">
+        <a data-target="modal1" id="add-btn" class="waves-effect waves-light btn red darken-1">Submit Survey</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 class="red-text text-darken-2">Test Results</h4>
+        <div class="row">
+          <div class="col s4 offset-s1" id="myInfo">
+            
+          </div>
+          <div class="col s4 offset-s2" id="matchInfo">
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="/" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">home</i></a>
+        <a href="https://performancemanager4.successfactors.com/login?company=Delek#/login" target="_blank" class="btn-floating btn-large waves-effect waves-light red"><img src="./assets/images//icon.png" class="gitLink"></a>
+        <!-- API QUIZ -->
+        <a href="/api/answers" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">list</i></a>
+      </div>
+  </div>
+
+</body>
+</html>

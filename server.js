@@ -1,26 +1,19 @@
-// ==============================================================================
-// DEPENDENCIES
 var express = require("express");
 var bodyParser = require("body-parser");
 
-// ==============================================================================
-// EXPRESS CONFIGURATION
+
 var app = express();
+var port = process.env.PORT || 8080;
 
-
-var PORT = process.env.PORT || 8080;
-
-
-
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(express.static(__dirname + "/app/public"));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-//html route using express
-require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
-
-app.listen(PORT, function() {
-  console.log("App listening on PORT: " + PORT);
+app.listen(port, function() {
+  console.log("App listening on PORT " + port);
 });

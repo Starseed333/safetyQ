@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Safety Survery</title>
-	<!-- Bootstrap Link -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	 <script src="https://code.jquery.com/jquery.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Friends</title>
+  <meta charset="utf-8">
+<!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha384-fJU6sGmyn07b+uD1nMk7/iSb4yvaowcueiQhfVgQuD98rfva8mcr1eSvjchfpMrH" crossorigin="anonymous"></script>
+<!-- materialize & css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- public js -->
+  <script type="text/javascript" src="./assets/client.js"></script>
+    <!-- public css -->
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  
 </head>
 <body>
 
-	<div class="container">
-
-    <div class="jumbotron">
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Safety DOT Questionnaire</h1>
-      <hr>
-      <h2>Answer a few basic questions. </h2>
-      <h2>Then find the safety solution by matching your answers to the questions provided.</h2>
-      <br>
-
-      <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Questionnaire</h4></button></a>
-      </div>
-
+  <div class="row" id="myLinks">
+    <div class="col s2 offset-s10">
+      <a href="https://performancemanager4.successfactors.com/login?company=Delek#/login" target="_blank" class="btn-floating btn-large waves-effect waves-light red"><img src="./assets/images/icon.png" class="gitLink"></a>
+      <a href="/api/friends" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">list</i></a>
     </div>
-
-    <div class="section-about-video">
-      <div class="container2">
-
-        <!-- video with play controls -->
-
-        <iframe src="" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <!-- close container2-->
-
-    </div>
-
-
-
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Safety Questionnaire</a> | <a href="https://github.com/Starseed333/safetyQ">GitHub</a></p>
-      </div>
-    </footer>
-
   </div>
-
-
-
+  
+  
+  <div class="container" id="main">
+    <div class="card large z-depth-2">
+      <div class="card-panel red darken-1">
+        <div class="row">
+          <div class="col s8 offset-s2">
+            <h1 class="white-text"><i class="material-icons medium">local_shipping</i>  Delek</h1>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col s8 offset-s2">
+          <h4>DOT Compliance Quiz</h4>
+          <h4>The quiz contains 10 questions, each one has 5 choices to choose from.</h4>  
+        </div>
+        <div class="col s8 offset-s2" id="btnDiv">
+          <a href="/survey">
+            <button class="red darken-1 btn btn-large waves-effect waves-light" id="surveyBtn" type="button"  >Take Survey</button>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
